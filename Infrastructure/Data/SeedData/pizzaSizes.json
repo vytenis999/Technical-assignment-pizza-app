@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Name": "Small",
+    "Price": 8,
+    "Diameter": 26
+  },
+  {
+    "Name": "Medium",
+    "Price": 10,
+    "Diameter": 30
+  },
+  {
+    "Name": "Large",
+    "Price": 12,
+    "Diameter": 42
+  }
+]
