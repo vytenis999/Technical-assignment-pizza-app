@@ -23,7 +23,7 @@ export default function PizzaForm(props: Props) {
 	const calculatePizzaPrice = async (pizza) => {
 		try {
 			const response = await axios.post(
-				"https://localhost:7271/api/Orders/calculation",
+				"http://localhost:7271/api/Orders/calculation",
 				{
 					pizzas: [pizza],
 				}

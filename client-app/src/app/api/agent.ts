@@ -5,7 +5,7 @@ import { User, UserFormValues } from "../models/user";
 import { store } from "../stores/store";
 import { OrderToGet } from "../models/orderToGet";
 
-axios.defaults.baseURL = "https://localhost:7271/api";
+axios.defaults.baseURL = "http://localhost:7271/api";
 
 axios.interceptors.request.use((config) => {
 	const token = store.commonStore.token;

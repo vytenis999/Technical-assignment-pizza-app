@@ -26,7 +26,7 @@ export default function OrdersPage() {
 
 	useEffect(() => {
 		axios
-			.get<Size[]>("https://localhost:7271/api/Pizzas/sizes")
+			.get<Size[]>("http://localhost:7271/api/Pizzas/sizes")
 			.then((response) => {
 				setSizes(response.data);
 			});
@@ -40,7 +40,7 @@ export default function OrdersPage() {
 					toppings={toppings}
 					onPlaceOrder={(pizza) => {
 						axios
-							.post("https://localhost:7271/api/Orders/calculation", {
+							.post("http://localhost:7271/api/Orders/calculation", {
 								pizzas: [...pizzas, pizza],
 							})
 							.then((response) => {
